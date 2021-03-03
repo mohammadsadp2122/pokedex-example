@@ -11,5 +11,4 @@ job1:
     untracked: true
     paths:
      - node_modules/
-    when: always
-    policy: pull
+
