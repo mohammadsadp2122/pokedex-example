@@ -1,0 +1,15 @@
+stages:
+  - build
+  - test
+  - deploy
+
+job1:
+  stage: build
+  image: node:10
+  script: npm install
+  cache:
+    untracked: true
+    paths:
+     - node_modules/
+    when: always
+    policy: pull
